@@ -2,6 +2,7 @@ import java.sql.*;
 import java.util.*;
 
 public class UsuarioDAO{
+
     public void criar(Usuario usuario){
         String sql = "INSERT INTO usuario(nome, email) VALUES (?, ?)";
         try (Connection conn = Conexao.getConnection();
@@ -50,6 +51,7 @@ public class UsuarioDAO{
         }
 
     }
+
     public void excluir(int id){
         String sql = "DELETE FROM usuario WHERE id = ?";
         try(Connection conn = Conexao.getConnection();

@@ -69,6 +69,7 @@ public class Livro {
 
     public static void main(String[] args) {
         List<Livro> estante = new ArrayList<>();
+
         estante.add(new Livro("Amor, teoricamente", "Ali Hazelwood", false, 1));
         estante.add(new Livro("A razão do amor", "Ali Hazelwood", true, 2));
         estante.add(new Livro("Hipótese do amor", "Ali Hazelwood", false, 3));
@@ -81,6 +82,7 @@ public class Livro {
         estante.add(new Livro("O jogador número um", "Ernest Cline", true, 10));
 
         Scanner sc = new Scanner(System.in);
+
         boolean continuar = true;
         int ultimoCodigo = 10;
 
@@ -231,8 +233,7 @@ public class Livro {
                         continuar = false;
                         break;
 
-                    default:
-                        System.out.println("\nOpção inválida! Escolha uma opção de 1 a 5.");
+                    default:                        System.out.println("\nOpção inválida! Escolha uma opção de 1 a 5.");
                 }
 
             } catch (InputMismatchException e) {
